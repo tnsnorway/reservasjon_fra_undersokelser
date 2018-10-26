@@ -1,99 +1,296 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="https://www.tns-gallup.no/Cawi/img/favicon.ico">
 
-<head runat="server">
-    <title></title>
-</head>
-<meta charset="utf-8" />
+    <title>Norsk Gallup</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+<link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="Scripts/bootstrap.min.js"></script>
 <link href="content/bootstrap.min.css" rel="stylesheet" />
 
-<style>
-    h1 {
-        font-size: 1.2rem;
+  </head>
 
-    }
+  <body>
 
-    .jumbotron {
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+        <img src="https://www.tns-gallup.no/Cawi/img/Norsk_Gallup.png" class="test" height="25" alt="">
+        </a>
+        <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+              </div>
+            </li>
+           
+          </ul>
+        </div> -->
+      </div>
+    </nav>
 
-    }
-</style>
+    <header>
+      
+          <!-- Slide One - Set the background image for this slide in the line below -->
+<div class="carousel-item active" style="background-image: url('https://www.tns-gallup.no/Cawi/img/kvinnemobil.jpg')">
+            
+          </div>
 
+        </a>
+      </div>
+    </header>
 
+    <!-- Page Content -->
+    <div class="container">
 
+<h1 class="my-4">Reservasjon</h1>
+<h3 class="my-3">Jeg ønsker ikke motta undersøkelser fra Norsk Gallup!</h3>
 
+<div class="row">
+<div class="container-fluid">
+      Dersom du ikke ønsker å motta undersøkelser fra Norsk Gallup respekterer vi selvsagt det. <br/><br/>
+      For å reservere deg fra å motta framtidige undersøkelser må du oppgi e-postadresse og/eller
+      telefonnummer ved å bruke feltene under. Reservasjonen vil da gjelde den eller de adressene og
+      telefonnumrene du registrerer, og ingen andre.
+        <br/><br/>
+    Du vil fortsatt kunne motta undersøkelser i følgende sammenhenger:<br/><br/>
+    <ul>
+      <li>Medarbeiderundersøkelser i bedriften du jobber i, dersom denne gjennomføres i regi av Kantar
+        eller Norsk Gallup</li>
+      <li>Undersøkelser i GallupPanelet dersom du selv har meldt deg inn i panelet</li>
+      <li>Telefonundersøkelser til andre telefonnummer enn det du har oppgitt til</li>
+      <li>E-postundersøkelser til andre adresser</li>
+      <li>Undersøkelser sendt ut pr. brev til din postadresse</li>
+    </ul>
+    Har du spørsmål knyttet til personvern i Kantar eller Norsk Gallup, finner du mer informasjon og
+    kontaktinformasjon for personvern på denne siden: <br/>
+    <a href="https://kantar.no/om/norsk-gallup/personvern/"> https://kantar.no/om/norsk-gallup/personvern/
+    </a><br/>
+    <br/>
+    Dersom du angrer på en reservasjon, kan du sende en e-post til <a href="mailto:personvern@norskgallup.no">personvern@norskgallup.no</a>.<br /><br />
+  </div>
+</div>
 
-</head>
+<div class="container">
+  <div class="justify-content-around">
+  <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+  </div>
+  <div class="form-group">
+  <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+  </div>
+  <div class="justify-content-around">
+  <asp:Label ID="Label2" runat="server" Text="Telefonnummer"></asp:Label>
+  </div>
+  <div class="form-group">
+  <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
+  </div>
+  <div class="form-group">
+    <asp:Button ID="Button1" runat="server" Text="Lagre" CssClass="btn-primary" OnClick="Button1_Click" />
+  </div>
+</div>
 
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <div class="container">
-                <div class="jumbotron">
-                    <h1>
-                        Jeg ønsker ikke motta undersøkelser fra Norsk Gallup!</h1>
-                </div>
+</form>
 
-                Dersom du ikke ønsker å motta undersøkelser fra NorskGallup respekterer vi selvsagt det. <br /><br />
-                For å reservere deg fra å motta framtidige undersøkelser må du oppgi e-postadresse og/eller
-                telefonnummer ved å bruke feltene under. Reservasjonen vil da gjelde den eller de adressene og
-                telefonnumrene du registrerer, og ingen andre.
-                <br /><br />
-                Du vil fortsatt kunne motta undersøkelser i følgende sammenhenger: <br /><br />
-                <ul>
+      <!-- Call to Action Section -->
+      <div class="row mb-4">
+ <!--        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+        </div> -->
+      </div>
 
-                    <li>Medarbeiderundersøkelser i bedriften du jobber i, dersom denne gjennomføres i regi av Kantar
-                        eller Norsk Gallup</li>
-                    <li> Undersøkelser i GallupPanelet dersom du selv har meldt deg inn i panelet</li>
-                    <li>Telefonundersøkelser til andre telefonnummer enn det du har oppgitt til</li>
-                    <li>E-postundersøkelser til andre adresser</li>
-                    <li>Undersøkelser sendt ut pr. brev til din postadresse</li>
-                </ul>
-                Har du spørsmål knyttet til personvern i Kantar eller Norsk Gallup, finner du mer informasjon og
-                kontaktinformasjon for personvern på denne siden: <br />
-                <a href="https://kantar.no/om/norsk-gallup/personvern/"> https://kantar.no/om/norsk-gallup/personvern/
-                </a> <br />
-                <br />
+    </div>
+    <!-- /.container -->
 
-                Dersom du angrer på en reservasjon, kan du sende en e-post til <a href="mailto:personvern@norskgallup.no">personvern@norskgallup.no</a>.<br /><br />
-            </div>
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
 
+<div style="background-color: #6998a0;">
+    <div class="container">
 
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
 
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                  </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
 
-            <div class="container">
-                <div class="justify-content-around">
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fa fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-google-plus white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-linkedin white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram white-text"> </i>
+          </a>
 
+        </div>
+        <!-- Grid column -->
 
-                    <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+      </div>
+      <!-- Grid row-->
 
+    </div>
+  </div>
 
-                </div>
-                <div class="form-group">
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-                </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
 
-                <div class="justify-content-around">
-                    <asp:Label ID="Label2" runat="server" Text="Telefonnummer"></asp:Label>
-                </div>
-                <div class="form-group">
-                    <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
-                </div>
-                <div class="form-group">
-                    <asp:Button ID="Button1" runat="server" Text="Lagre" CssClass="btn-primary" OnClick="Button1_Click" />
-                </div>
-            </div>
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
 
-    </form>
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Norsk Gallup</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+<a class="dark-grey-text" href="http://www.tns-gallup.no/om/om-kantar-tns/personvernerklaeringer/" style="color: #6998a0">Personvernerklæringer</a>
+      </p>  
 
+      </div>
+      <!-- Grid column -->
 
-</body>
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+   <!--      <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">MDBootstrap</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">MDWordPress</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">BrandFlow</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+        </p> -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+<!--         <h6 class="text-uppercase font-weight-bold">Sosialt</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Your Account</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Help</a>
+        </p> -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+<i class="fa fa-home mr-3"></i>Kantar TNS AS, Kirkegata 20</p>
+        <p>
+<p>
+<i class="fa fa-home mr-3"></i>Postboks 240, Sentrum 0103 </p>
+<p>
+<i class="fa fa-envelope mr-3"></i><a href="mailto:info@tns-gallup.no" style="color: #6998a0">info@tns-gallup.no</a>
+ </p>
+        <p>
+<i class="fa fa-print mr-3"></i><a href="tel:+4791111600" style="color: #6998a0">Tel: 91 11 16 00</a></p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+<div class="footer-copyright text-center text-black-50 py-3">©
+  <script type="text/javascript">
+    document.write(new Date().getFullYear());
+  </script>
+  Norsk Gallup AS
+   </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 
 </html>
