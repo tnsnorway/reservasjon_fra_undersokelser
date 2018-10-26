@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+</head>
+<meta charset="utf-8" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<link href="content/bootstrap.min.css" rel="stylesheet" />
+
+<style>
+    h1 {
+        font-size: 1.2rem;
+
+    }
+
+    .jumbotron {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+    }
+</style>
+
+
+
+
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>
+                        Jeg ønsker ikke motta undersøkelser fra Norsk Gallup!</h1>
+                </div>
+
+                Dersom du ikke ønsker å motta undersøkelser fra NorskGallup respekterer vi selvsagt det. <br /><br />
+                For å reservere deg fra å motta framtidige undersøkelser må du oppgi e-postadresse og/eller
+                telefonnummer ved å bruke feltene under. Reservasjonen vil da gjelde den eller de adressene og
+                telefonnumrene du registrerer, og ingen andre.
+                <br /><br />
+                Du vil fortsatt kunne motta undersøkelser i følgende sammenhenger: <br /><br />
+                <ul>
+
+                    <li>Medarbeiderundersøkelser i bedriften du jobber i, dersom denne gjennomføres i regi av Kantar
+                        eller Norsk Gallup</li>
+                    <li> Undersøkelser i GallupPanelet dersom du selv har meldt deg inn i panelet</li>
+                    <li>Telefonundersøkelser til andre telefonnummer enn det du har oppgitt til</li>
+                    <li>E-postundersøkelser til andre adresser</li>
+                    <li>Undersøkelser sendt ut pr. brev til din postadresse</li>
+                </ul>
+                Har du spørsmål knyttet til personvern i Kantar eller Norsk Gallup, finner du mer informasjon og
+                kontaktinformasjon for personvern på denne siden: <br />
+                <a href="https://kantar.no/om/norsk-gallup/personvern/"> https://kantar.no/om/norsk-gallup/personvern/
+                </a> <br />
+                <br />
+
+                Dersom du angrer på en reservasjon, kan du sende en e-post til <a href="mailto:personvern@norskgallup.no">personvern@norskgallup.no</a>.<br /><br />
+            </div>
+
+
+
+
+
+            <div class="container">
+                <div class="justify-content-around">
+
+
+                    <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+
+
+                </div>
+                <div class="form-group">
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+
+                <div class="justify-content-around">
+                    <asp:Label ID="Label2" runat="server" Text="Telefonnummer"></asp:Label>
+                </div>
+                <div class="form-group">
+                    <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <asp:Button ID="Button1" runat="server" Text="Lagre" CssClass="btn-primary" OnClick="Button1_Click" />
+                </div>
+            </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
